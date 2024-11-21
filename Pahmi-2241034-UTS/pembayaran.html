@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <header>
+        <h1>E-Commerce: Checkout</h1>
+        <nav>
+            <a href="daftarproduk.html">Daftar Produk</a>
+            <a href="keranjang.html">Keranjang</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Ringkasan Pembayaran</h2>
+        <div id="checkout-summary">
+            <p>Tidak ada produk di keranjang.</p>
+        </div>
+        <form id="payment-form">
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="address">Alamat:</label>
+            <textarea id="address" name="address" required></textarea>
+            <label for="payment">Metode Pembayaran:</label>
+            <select id="payment" name="payment" required>
+                <option value="credit-card">Kartu Kredit</option>
+                <option value="bank-transfer">Transfer Bank</option>
+                <option value="e-wallet">E-Wallet</option>
+            </select>
+            <button type="submit">Bayar Sekarang</button>
+        </form>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

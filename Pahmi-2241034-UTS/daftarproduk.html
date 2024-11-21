@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Produk</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <header>
+        <h1>E-Commerce: Daftar Produk</h1>
+        <nav>
+            <a href="keranjang.html">Keranjang</a>
+            <a href="pembayaran.html">Checkout</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Produk Tersedia</h2>
+        <div id="product-list">
+            <div class="product">
+                <h3>Celana Jeans</h3>
+                <p>Harga: Rp175.000</p>
+                <button onclick="addToCart('Celana Jeans', 175000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <h3>Baju kemeja</h3>
+                <p>Harga: Rp85.000</p>
+                <button onclick="addToCart('Baju kemeja', 85000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <h3>jaket parka</h3>
+                <p>Harga: Rp350.000</p>
+                <button onclick="addToCart('jaket parka', 350000)">Tambah ke Keranjang</button>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
